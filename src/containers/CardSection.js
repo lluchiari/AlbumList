@@ -1,10 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 const CardSection = (props) => {
   return(
     <View style={styles.containerStyle}>
-      {props.children}
+      {props.data.title}
     </View>
   );
 };
@@ -17,7 +17,7 @@ const styles = {
     flexDirection: 'row',
     borderColor: '#ddd',
     position: 'relative'
-  }
+  },
 };
 
 export default CardSection;
